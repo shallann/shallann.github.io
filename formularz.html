@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="/formularzyk_megiski.php">
+        <label for="fname">First name:</label>
+        <input type="text" id="fname" name="fname"><br><br>
+
+        <label for="lname">Last name:</label>
+        <input type="text" id="lname" name="lname"><br><br>
+
+        <label for="street">Street:</label>
+        <input type="text" id="street" name="street" min="1"><br><br>
+
+        <label for="home">Home:</label>
+        <input type="text" id="home" name="home" pattern="\d+[A-Za-z]?" placeholder="e.g., 12A" title="Enter a valid home number (e.g., 12 or 12A)"><br><br>
+
+        <label for="flat">Flat:</label>
+        <input type="number" id="flat" name="flat" min="1" placeholder="e.g., 5"><br><br>
+
+        <label for="tel">Telephone number:</label>
+        <input type="tel" id="tel" name="tel" pattern="\+\d{2} \d{9}" placeholder="+XX XXXXXXXXX"><br><br>
+
+        <label for="dateOfBirth">Date of birth:</label>
+        <input type="date" id="dateOfBirth" name="dateOfBirth"><br><br>
+
+        <label>Driver licence:</label><br>
+        <input type="radio" id="driverL_yes" name="driverL" value="yes">
+        <label for="driverL_yes">Yes</label><br>
+        <input type="radio" id="driverL_no" name="driverL" value="no">
+        <label for="driverL_no">No</label><br><br>
+
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password"><br><br>
+
+        <label for="gender">Gender:</label>
+        <select id="gender" name="gender">
+            <option value="women">Women</option>
+            <option value="men">Men</option>
+            <option value="prefer_not_to_answer">Pefer not to answer</option>
+        </select><br><br>
+
+        <label for="city">City</label>
+        <input type="text" id="city" name="city"><br><br>
+
+        <label for="country">Country:</label>
+        <input type="text" id="country" name="country"><br><br>
+
+        <input type="submit" value="Submit">
+      </form>  
+</body>
+</html>
