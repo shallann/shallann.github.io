@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StronkaMegiski</title>
+    <link rel="stylesheet" href="formularz.css">
+</head>
+<body>
+    <form action="/formularzyk_megiski.php">
+        <label for="fname">First name:</label>
+        <input type="text" id="fname" name="fname">
+
+        <label for="lname">Last name:</label>
+        <input type="text" id="lname" name="lname">
+
+        <label for="street">Street:</label>
+        <input type="text" id="street" name="street">
+
+        <label for="home">Home:</label>
+        <input type="text" id="home" name="home" pattern="\d+[A-Za-z]?" placeholder="e.g., 12A" title="Enter a valid home number (e.g., 12 or 12A)">
+
+        <label for="flat">Flat:</label>
+        <input type="number" id="flat" name="flat" min="1" placeholder="e.g., 5">
+
+        <label for="tel">Telephone number:</label>
+        <input type="tel" id="tel" name="tel" pattern="\+\d{2} \d{9}" placeholder="+XX XXXXXXXXX">
+
+        <label for="dateOfBirth">Date of birth:</label>
+        <input type="date" id="dateOfBirth" name="dateOfBirth">
+
+        <div class="radio-group">
+            <label>Driver licence:</label>
+            <input type="radio" id="driverL_yes" name="driverL" value="yes">
+            <label for="driverL_yes">Yes</label>
+            <input type="radio" id="driverL_no" name="driverL" value="no">
+            <label for="driverL_no">No</label>
+        </div>
+
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password">
+
+        <label for="gender">Gender:</label>
+        <select id="gender" name="gender">
+            <option value="women">Women</option>
+            <option value="men">Men</option>
+            <option value="prefer_not_to_answer">Prefer not to answer</option>
+        </select>
+
+        <label for="city">City:</label>
+        <input type="text" id="city" name="city">
+
+        <label for="country">Country:</label>
+        <input type="text" id="country" name="country">
+
+        <input type="submit" value="Submit">
+    </form>
+</body>
+</html>
