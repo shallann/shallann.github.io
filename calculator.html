@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="calculator.css">
+    <script src="calculator.js" defer></script>
+</head>
+<body>
+    <div id="calculator">
+        <input id="screen" readonly>
+        <div id="keys">
+            <button onclick="clearScreen()" class="operators">AC</button>
+
+            <button onclick="deleteLast()" class="operators">DE</button>
+
+            <button onclick="showOnScreen('.')">.</button>
+            <button onclick="showOnScreen('/')">/</button>
+            <button onclick="showOnScreen('7')">7</button>
+            <button onclick="showOnScreen('8')">8</button>
+            <button onclick="showOnScreen('9')">9</button>
+
+            <button onclick="showOnScreen('*')" class="operators">*</button>
+
+            <button onclick="showOnScreen('4')">4</button>
+            <button onclick="showOnScreen('5')">5</button>
+            <button onclick="showOnScreen('6')">6</button>
+
+            <button onclick="showOnScreen('-')" class="operators">-</button>
+
+            <button onclick="showOnScreen('1')">1</button>
+            <button onclick="showOnScreen('2')">2</button>
+            <button onclick="showOnScreen('3')">3</button>
+
+            <button onclick="showOnScreen('+')" class="operators">+</button>
+
+            <button onclick="showOnScreen('00')">00</button>
+            <button onclick="showOnScreen('0')">0</button>
+            
+            <button onclick="calculate()" class="equal operators" style="grid-column: span 2;">=</button>
+
+        </div>
+    </div>
+</body>
+</html>

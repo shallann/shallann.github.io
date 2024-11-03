@@ -1,0 +1,94 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: optima, sans-serif;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column; /* Align items vertically */
+    min-height: 100vh;
+    background-color: #9d99a4;
+}
+
+/* Style for the header */
+.header {
+    width: 100%;
+    text-align: center;
+    font-size: 40px;
+    font-weight: 500;
+    padding: 30px 0;
+    color: #FFFFFF;
+}
+
+/* Style for container and navigation */
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 90%;
+    max-width: 400px;
+    margin-top: 20px; /* Space below the header */
+}
+
+nav {
+    background: #2F263E;
+    border-radius: 30px;
+    padding: 20px;
+    box-shadow: 0 25px 20px -20px rgba(0, 0, 0, 0.4);
+    width: 100%;
+}
+
+nav ul {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding: 0;
+    align-items: center;
+}
+
+nav ul li {
+    list-style: none;
+    position: relative;
+    padding: 12px 25px;
+    font-size: 18px;
+    font-weight: 500;
+    color: #f3f7f7;
+    cursor: pointer;
+    transition: color 0.4s ease-in-out;
+    border-radius: 30px;
+    overflow: hidden;
+    width: 100%;
+    text-align: center;
+}
+
+nav ul li a {
+    color: inherit;
+    text-decoration: none;
+    position: relative;
+    z-index: 1;
+}
+
+nav ul li::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: #917a98;
+    border-radius: inherit;
+    transform: scale(0);
+    transition: transform 0.4s ease;
+    z-index: 0;
+}
+
+nav ul li:hover {
+    color: #FFFFFF;
+}
+
+nav ul li:hover::after {
+    transform: scale(1);
+    opacity: 1;
+    transition: transform 0.4s ease;
+}
