@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="patterns.css">
+    <script src="patterns.js" defer></script>
+</head>
+<body>
+    <script src="https://kit.fontawesome.com/9aea16c611.js" crossorigin="anonymous"></script>
+
+    <div class="container">
+            <div class="header">
+                <h2>Personal information form</h2>
+            </div>
+            <form class="form" id="form">
+                <div class="form-control">
+                    <label>First name</label>
+                    <input type="text"
+                    placeholder="Magdalena" id="firstName">
+                    <i class="fa-solid fa-circle-check"></i> 
+                    <i class="fa-solid fa-circle-exclamation"></i>               
+                    <small>Error message</small>
+                </div>
+              
+              <div class="form-control">
+                    <label>Last name</label>
+                    <input type="text"
+                    placeholder="Pacocha" id="lastName">
+                    <i class="fa-solid fa-circle-check"></i> 
+                    <i class="fa-solid fa-circle-exclamation"></i>               
+                    <small>Error message</small>
+                </div>
+              
+              <div class="form-control">
+                    <label>E-mail</label>
+                    <input type="text"
+                    placeholder="magdalenapacocha@gmail.com" id="email">
+                    <i class="fa-solid fa-circle-check"></i> 
+                    <i class="fa-solid fa-circle-exclamation"></i>               
+                    <small>Error message</small>
+                </div>
+              
+              <div class="form-control">
+                    <label>Street</label>
+                    <input type="text"
+                    placeholder="Złota" id="street">
+                    <i class="fa-solid fa-circle-check"></i> 
+                    <i class="fa-solid fa-circle-exclamation"></i>               
+                    <small>Error message</small>
+                </div>
+              
+              <div class="form-control">
+                    <label>Home</label>
+                    <input type="text"
+                    placeholder="20/20A" id="home">
+                    <i class="fa-solid fa-circle-check"></i> 
+                    <i class="fa-solid fa-circle-exclamation"></i>               
+                    <small>Error message</small>
+                </div>
+              
+              <div class="form-control">
+                    <label>Flat</label>
+                    <input type="text"
+                    placeholder="90" id="flat">
+                    <i class="fa-solid fa-circle-check"></i> 
+                    <i class="fa-solid fa-circle-exclamation"></i>               
+                    <small>Error message</small>
+                </div>
+              
+              <div class="form-control">
+                    <label>Telephone number</label>
+                    <input type="tel"
+                    placeholder="XXX XXX XXX" id="telephone">
+                    <i class="fa-solid fa-circle-check"></i> 
+                    <i class="fa-solid fa-circle-exclamation"></i>               
+                    <small>Error message</small>
+                </div>
+              
+              <div class="form-control">
+                    <label>Date of birth</label>
+                    <input type="date"
+                    placeholder="Magdalena" id="date">
+                    <i class="fa-solid fa-circle-check"></i> 
+                    <i class="fa-solid fa-circle-exclamation"></i>               
+                    <small>Error message</small>
+                </div>
+              
+                <div class="form-control">
+                  <label>Driver licence:</label><br>
+                  <input type="radio" id="driverL_yes" name="driverL" value="yes">
+                  <label for="driverL_yes">Yes</label><br>
+                  <input type="radio" id="driverL_no" name="driverL" value="no">
+                  <label for="driverL_no">No</label><br>
+                  <small>Error message</small> <!-- Dodane do obsługi błędu -->
+              </div>
+              
+              <div class="form-control">
+                    <label>Password</label>
+                    <input type="password"
+                    placeholder="password" id="password1">
+                    <i class="fa-solid fa-circle-check"></i> 
+                    <i class="fa-solid fa-circle-exclamation"></i>               
+                    <small>Error message</small>
+              </div>
+              
+              <div class="form-control">
+                    <label>Password again</label>
+                    <input type="password"
+                    placeholder="password" id="password2">
+                    <i class="fa-solid fa-circle-check"></i> 
+                    <i class="fa-solid fa-circle-exclamation"></i>               
+                    <small>Error message</small>
+              </div>
+              
+              <div class="form-control">
+                <label for="gender">Gender:</label>
+                <select id="gender" name="gender">
+                    <option value="">Select...</option> <!-- Domyślna wartość -->
+                    <option value="women">Women</option>
+                    <option value="men">Men</option>
+                    <option value="prefer_not_to_answer">Prefer not to answer</option>
+                </select>
+                <i class="fa-solid fa-circle-check"></i> 
+                <i class="fa-solid fa-circle-exclamation"></i>               
+                <small>Error message</small> <!-- Dodane do obsługi błędu -->
+            </div>
+              
+               <div class="form-control">
+                    <label>City</label>
+                    <input type="text"
+                    placeholder="Magdalena" id="city">
+                    <i class="fa-solid fa-circle-check"></i> 
+                    <i class="fa-solid fa-circle-exclamation"></i>               
+                    <small>Error message</small>
+                </div>
+              
+               <div class="form-control">
+                    <label>Country</label>
+                    <input type="text"
+                    placeholder="Poland" id="country">
+                    <i class="fa-solid fa-circle-check"></i> 
+                    <i class="fa-solid fa-circle-exclamation"></i>               
+                    <small>Error message</small>
+                </div>
+              
+              <button>Submit</button>
+            </form>
+        </div> 
+</body>
+</html>
